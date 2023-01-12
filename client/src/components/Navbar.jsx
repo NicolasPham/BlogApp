@@ -8,7 +8,11 @@ const cats = ["ART", "CINEMA", "SPORTS", "TECHNOLOGY", "DESIGN", "FOOD"]
 const Navbar = () => {
   return (
     <nav className='flex-row-center'>
-      <div className='logo'><img src={Logo} alt="" /></div>
+      <div className='logo'>
+        <Link className='link' to="/" >
+          <img src={Logo} alt="" />
+        </Link>
+      </div>
       <div className='content flex-row-center'>
 
         <div className='cats flex-row-center'>
