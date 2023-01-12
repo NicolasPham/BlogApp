@@ -1,26 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-const posts = [
-  {
-    id: 0,
-    img: "https://images.unsplash.com/photo-1466096115517-bceecbfb6fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A cras semper auctor neque vitae. Nec ultrices dui sapien eget mi proin sed libero enim. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Tristique nulla aliquet enim tortor at auctor. Purus in massa tempor nec feugiat nisl pretium fusce id. Facilisis leo vel fringilla est. Interdum velit laoreet id donec ultrices tincidunt. Dolor magna eget est lorem ipsum. Eleifend quam adipiscing vitae proin sagittis. Massa vitae tortor condimentum lacinia quis vel eros donec ac. Nisi porta lorem mollis aliquam ut porttitor leo a. Neque egestas congue quisque egestas.",
-  },
-  {
-    id: 1,
-    img: "https://images.unsplash.com/photo-1466096115517-bceecbfb6fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A cras semper auctor neque vitae. Nec ultrices dui sapien eget mi proin sed libero enim. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Tristique nulla aliquet enim tortor at auctor. Purus in massa tempor nec feugiat nisl pretium fusce id. Facilisis leo vel fringilla est. Interdum velit laoreet id donec ultrices tincidunt. Dolor magna eget est lorem ipsum. Eleifend quam adipiscing vitae proin sagittis. Massa vitae tortor condimentum lacinia quis vel eros donec ac. Nisi porta lorem mollis aliquam ut porttitor leo a. Neque egestas congue quisque egestas.",
-  },
-  {
-    id: 2,
-    img: "https://images.unsplash.com/photo-1466096115517-bceecbfb6fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A cras semper auctor neque vitae. Nec ultrices dui sapien eget mi proin sed libero enim. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Tristique nulla aliquet enim tortor at auctor. Purus in massa tempor nec feugiat nisl pretium fusce id. Facilisis leo vel fringilla est. Interdum velit laoreet id donec ultrices tincidunt. Dolor magna eget est lorem ipsum. Eleifend quam adipiscing vitae proin sagittis. Massa vitae tortor condimentum lacinia quis vel eros donec ac. Nisi porta lorem mollis aliquam ut porttitor leo a. Neque egestas congue quisque egestas.",
-  },
-];
+import { posts } from '../constants/posts';
 
 const Home = () => {
   return (

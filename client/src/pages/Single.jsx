@@ -1,11 +1,13 @@
 import React from "react";
-import { AiFillEdit } from "react-icons/ai";
+import { AiFillEdit, AiFillDelete } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import Menu from "../components/Menu";
+import { posts } from '../constants/posts';
 
 const Single = () => {
   return (
     <section className="single flex-row">
-      <div className="content">
+      <div className="content flex-column">
         <img
           src="https://images.unsplash.com/photo-1466096115517-bceecbfb6fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
           alt=""
@@ -19,16 +21,22 @@ const Single = () => {
             />
             <span>Nicolas</span>
 
-            <div className="edit">
+            <div className="edit flex-row">
               <Link className="link" to="/write?edit=2">
-                <AiFillEdit />
+                <AiFillEdit className="edit_edit" />
               </Link>
+              <AiFillDelete className="edit_delete" />
             </div>
           </div>
           <p>Posted 2 days ago</p>
+
         </div>
+        <article className="flex-column">
+          <h1 className="title">{posts[0].title}</h1>
+          <p className="desc">{posts[0].desc}</p>
+        </article>
       </div>
-      <div className="menu">Menu</div>
+      <Menu/>
     </section>
   );
 };
