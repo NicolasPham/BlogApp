@@ -1,228 +1,256 @@
 $lightGreen: #b9e7e7;
 $darkBrown: #795438;
-$cream: #F1DBC9;
-$lightBrown: #D0AC8F;
-$pinkBrown: #BC9C8E;
-$brownGreen: #766F62;
+$cream: #f1dbc9;
+$lightBrown: #d0ac8f;
+$pinkBrown: #bc9c8e;
+$brownGreen: #766f62;
 
 //REUSABLE
 * {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 .flex-row-center {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .flex-column-center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
 .flex-column {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .link {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .title {
-    font-size: 48px;
-    color: $cream;
+  font-size: 30px;
+  color: $cream;
 }
 
 .desc {
-    font-size: 18px;
-    color: $pinkBrown
+  font-size: 14px;
+  color: $pinkBrown;
 }
 ////////////////////////////////////////
 .app {
+  .container {
+    //LOGIN AND REGISTER
+    .auth {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: $lightGreen;
 
+      h1 {
+        font-size: 20px;
+        color: teal;
+        margin-bottom: 20px;
+      }
 
-    .container {
+      form {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        background-color: white;
+        gap: 20px;
+        width: 200px;
 
-
-
-
-        //LOGIN AND REGISTER
-        .auth {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: $lightGreen;
-
-            h1 {
-                font-size: 20px;
-                color: teal;
-                margin-bottom: 20px;
-            }
-
-            form {
-                display: flex;
-                flex-direction: column;
-                padding: 30px;
-                background-color: white;
-                gap: 20px;
-                width: 200px;
-
-                input {
-                    padding: 10px;
-                    border: none;
-                    border-bottom: 1px solid gray;
-                }
-
-                button {
-                    padding: 10px;
-                    border: none;
-                    background-color: teal;
-                    color: white;
-                    cursor: pointer;
-                    border-radius: 5px;
-                }
-
-                p {
-                    font-size: 16px;
-                    color: red;
-                    text-align: center;
-                }
-
-                span {
-                    font-size: 16px;
-                    text-align: center;
-                }
-            }
+        input {
+          padding: 10px;
+          border: none;
+          border-bottom: 1px solid gray;
         }
-//NAVBAR
-nav {
-    justify-content: space-between;
-    padding: 20px 60px;
-    color: $darkBrown;
 
-
-    .logo {
-
-        img {
-
-            height: 50px;
+        button {
+          padding: 10px;
+          border: none;
+          background-color: teal;
+          color: white;
+          cursor: pointer;
+          border-radius: 5px;
         }
+
+        p {
+          font-size: 16px;
+          color: red;
+          text-align: center;
+        }
+
+        span {
+          font-size: 16px;
+          text-align: center;
+        }
+      }
     }
+    //NAVBAR
+    nav {
+      justify-content: space-between;
+      padding: 20px 60px;
+      color: $darkBrown;
 
-    .content {
+      .logo {
+        img {
+          height: 50px;
+        }
+      }
+
+      .content {
         gap: 20px;
 
         .cats {
-            gap: 10px;
+          gap: 10px;
         }
 
         .write {
-            background-color: $lightBrown;
-                color: $darkBrown;
-            font-size: 12px;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
+          background-color: $lightBrown;
+          color: $darkBrown;
+          font-size: 12px;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
 
-            &:hover {
-                width: 48px;
-                height: 48px;
-                background-color: white;
-                color: teal;
-                border: 1px solid teal;
-            }
+          &:hover {
+            width: 48px;
+            height: 48px;
+            background-color: white;
+            color: teal;
+            border: 1px solid teal;
+          }
         }
 
         .user {
-            gap: 10px;
+          gap: 10px;
 
-            span {
-                cursor: pointer;
-            }
+          span {
+            cursor: pointer;
+          }
         }
+      }
     }
-}
-    }
+  }
 }
 //HOME
 .home {
-    gap: 40px;
+  gap: 40px;
 
-    article {
-        display: flex;
-        flex-direction: row;
+  article {
+    display: flex;
+    flex-direction: row;
 
-        gap: 60px;
-        padding: 0 200px;
-        position: relative;
+    gap: 60px;
+    padding: 0 200px;
+    position: relative;
 
-        &:nth-child(2n+1) {
-            flex-direction: row-reverse;
-        }
-
-
-        .img {
-            flex: 1;
-            position: relative;
-
-            &::after {
-                content: "";
-                width: 100%;
-                height: 100%;
-                background-color: $cream;
-                position: absolute;
-                top: 10px;
-                left: -15px;
-                z-index: -1;
-                border-radius: 10px;
-            }
-
-            img {
-                width: 100%;
-                object-fit: cover;
-                position: relative;
-                border-radius: 10px;
-            }
-        }
-
-        .content {
-            flex: 2;
-            justify-content: space-between;
-
-
-            h1 {
-                color: $cream;
-
-            }
-
-            span {
-                overflow: hidden;
-                text-overflow: ellipsis;
-                display: -webkit-box;
-                -webkit-line-clamp: 3;
-                -webkit-box-orient: vertical;
-            }
-
-            button {
-                width: max-content;
-                padding: 10px 20px;
-                border: none;
-                color: $pinkBrown;
-                border: 1px solid $lightBrown;
-                background-color: $cream;
-                border-radius: 5px;
-            }
-        }
+    &:nth-child(2n + 1) {
+      flex-direction: row-reverse;
     }
+
+    .img {
+      flex: 1;
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: $cream;
+        position: absolute;
+        top: 10px;
+        left: -15px;
+        z-index: -1;
+        border-radius: 10px;
+      }
+
+      img {
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+        border-radius: 10px;
+      }
+    }
+
+    .content {
+      flex: 2;
+      justify-content: space-between;
+
+      h1 {
+        color: $cream;
+      }
+
+      span {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+      }
+
+      button {
+        width: max-content;
+        padding: 10px 20px;
+        border: none;
+        color: $pinkBrown;
+        border: 1px solid $lightBrown;
+        background-color: $cream;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+/* ---------------------------------- SINGLE -------------------*/
+.single {
+  justify-content: space-between;
+  padding: 20px 40px;
+  gap: 20px;
+  .content {
+    flex: 2;
+
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+
+    .info {
+      flex: 1;
+      justify-content: space-between;
+      font-size: 12px;
+      color: $darkBrown;
+
+      .user {
+        gap: 10px;
+        img {
+          width: 50px;
+          height: 50px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  .menu {
+    flex: 1;
+  }
 }
