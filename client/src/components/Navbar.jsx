@@ -3,7 +3,7 @@ import "../styles.scss";
 import { Link } from 'react-router-dom';
 import Logo from '../assets/logo.png'
 
-const cats = ["ART", "CINEMA", "SPORTS", "TECHNOLOGY", "DESIGN", "FOOD"]
+import { categories as cats} from '../constants/categories';
 
 const Navbar = () => {
   return (

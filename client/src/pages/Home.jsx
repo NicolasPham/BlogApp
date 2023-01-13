@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { posts } from '../constants/posts';
+import { posts } from "../constants/posts";
 
 const Home = () => {
   return (
@@ -11,12 +11,12 @@ const Home = () => {
             <img src={post.img} alt="" />
           </div>
           <div className="content flex-column">
-            <Link to={`/single/${post.id}`} className="link">
-              <h1 className="title">{post.title}</h1>
-            </Link>
+            <h1 className="title">{post.title}</h1>
             <span className="desc">{post.desc}</span>
 
-            <button>Readmore</button>
+            <Link to={`/single/${post.id}`} className="link">
+              <button>Readmore</button>
+            </Link>
           </div>
         </article>
       ))}

@@ -53,8 +53,8 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <div className="app">
-      <div className="container">
+    <div className="app relative">
+      <div className="container relative">
         <RouterProvider router={router} />
       </div>
     </div>
